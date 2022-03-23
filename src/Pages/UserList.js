@@ -16,13 +16,18 @@ export default function UserList() {
     
   const userList=user.results 
   console.log(userList)
+ 
   
   return (
     <div className="App">
+
         <h1>Meet The Team</h1>
         <h2>Name</h2>
-        <p>{JSON.stringify(userList)}</p>
-
+        {userList.map((email, key)=>{
+          return <>
+            <p key={key}>{email.email}</p>
+          </>
+        })}
     </div>
   )
 }
