@@ -1,0 +1,43 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  .card-items{
+    display: grid;
+    grid-template-columns: auto auto auto ;  
+    margin: 20px; 
+    height: auto;
+
+  
+  }
+
+  @media screen and (max-width: 480px) {
+    .card-items {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+
+    }
+  }
+
+  .search-bar{
+    display: flex;
+    flex-direction: row;
+  	justify-content: space-between;
+    margin: 15px;
+
+    
+  }
+.search-box{
+  border: none;
+  border-bottom: 2px solid black;
+  height: 20px;
+  background-color: #D1C1C1;
+}
+.search-box-button{
+  border: none;
+  background-color: #D1C1C1;
+}

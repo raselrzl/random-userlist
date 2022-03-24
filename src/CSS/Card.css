@@ -1,0 +1,42 @@
+.card{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background-image: url(../Images/card.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+
+}
+.user-name{
+    margin-top: 25px;
+    color: white;
+}
+
+.user-image-div{
+    height: 100px;
+    width: 100px; 
+    border-radius: 50%;   
+}
+.user-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.e-p-icons{
+    display: flex;
+	justify-content: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .card {
+        height: 300px;
+        padding: 20px;
+        
+    }
+
+  }

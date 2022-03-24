@@ -1,0 +1,8 @@
+.icons{
+    color: black;
+    margin: 7px;
+    font-size: 25px;
+}
+.icons:hover{
+    color: gray;
+}
