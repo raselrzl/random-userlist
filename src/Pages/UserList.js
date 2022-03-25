@@ -29,18 +29,18 @@ export default function UserList() {
  const viewicon=(listview?<BsGrid3X3GapFill className='icons' id="list-icon"/>:<FaThList className='icons' id="list-icon"/>)
 
  const handleClick=()=>{
-        setListview(false)
+        setListview(!listview)
  }
   
   return (
     <div className="App">         
      <h1>Meet The Team</h1>
      <div className='search-bar'>
-        <a href='page'> <BiSortAZ className='icons'/></a>
+        <button className='click-button'> <BiSortAZ className='icons'/></button>
         <form action="/action_page.php">          
           <BsSearch /><input type="text" placeholder="  Search" name="search" className='search-box'/>
         </form>
-        <a href='page' onClick={()=>handleClick()}> {viewicon}</a>
+        <button className='click-button' onClick={handleClick}> {viewicon}</button>
      </div>
 
          {/*         {userList.map((email, key)=>{
