@@ -4,11 +4,10 @@
     align-items: center;
     height: 300px;
     width: 190px;
-    background-image: url(../Images/card.svg);
+    background: url(../Images/card.svg);
     background-size: cover;
     border-radius: 20px;
     margin: 15px;
-
 }
 .user-name{
     margin-top: 25px;
@@ -35,8 +34,10 @@
 @media screen and (max-width: 480px) {
     .card {
         height: 300px;
-        padding: 20px;
-        
+        width: 150px;
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background: url(../Images/m1.svg);
     }
-
   }

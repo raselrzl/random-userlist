@@ -1,0 +1,64 @@
+#List-View-Card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+    height: 120px;
+    width: 650px;
+    background-image: url(../Images/card-List-3.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+#inner-div{
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    background-color: red;
+    border-radius: 20px 0 0 20px;
+}
+.user-image-container-list-view{
+    height: 80px;
+    width: 80px; 
+    border-radius: 50%; 
+    margin-left: 55px;
+
+}
+.user-image-list-view{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#name-address{
+    margin-right: 250px;
+    padding: 15px;
+
+}
+#name-address h6{
+    margin-top: 0px;
+}
+#icons-container-list-view{
+    margin-right: 20px;
+
+}
+
+@media screen and (max-width: 480px) {
+    #List-View-Card {
+        height: 100px;
+        width: 340px;
+    }
+    #name-address{
+        margin-right: 65px;
+    }
+    #icons-container-list-view{
+        margin-right: 5px;
+        align-self: flex-end;
+    }
+    .user-image-container-list-view{
+        height: 70px;
+        width: 70px; 
+        border-radius: 50%; 
+        margin-left: 40px;    
+    }
+  }
