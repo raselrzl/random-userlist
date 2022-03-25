@@ -28,9 +28,27 @@
 }
 
 #list-icon{
-  margin-left: 380px;
+  margin-left: 370px;
+  margin-right: 15px;
+}
+#sort-icon{
+  margin-left: 20px;
 }
 
+#form{
+  display: flex;
+  padding-left: 15px;
+  align-self:center;
+}
+
+/* #navbar{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+.content{
+  padding-top: 120px;
+} */
 @media screen and (max-width: 480px) {
   .card-items {
     display: grid;
@@ -40,7 +58,14 @@
     margin: 20px;
   }
   #list-icon{
-    margin-left: 50px;
+    margin-left: 40px;
   }
+  
+#form{
+  display: flex;
+  align-self:center;
+  
+
+}
 
 }

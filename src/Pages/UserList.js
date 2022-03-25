@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+//import axios from 'axios'
 import {BsSearch} from 'react-icons/bs'
 import {BiSortAZ} from 'react-icons/bi'
 import {FaThList} from 'react-icons/fa'
@@ -8,11 +8,11 @@ import Gridview from '../Component/Gridview'
 import ListView from '../Component/ListView'
 
 export default function UserList() {
-    const [user, setUser]=useState(null)
+   // const [user, setUser]=useState(null)
     const [listview, setListview]=useState(true)
-    const url='https://randomuser.me/api/?results=50'
+    //const url='https://randomuser.me/api/?results=50'
 
-    useEffect(()=>{
+/*     useEffect(()=>{
         axios.get(url)
         .then(response=>{
            setUser(response.data)                      
@@ -22,7 +22,7 @@ export default function UserList() {
     if (!user) return null
     
   const userList=user.results 
-  console.log(userList)
+  console.log(userList) */
 
 
  const view=(listview?<ListView />: <Gridview/>)
@@ -33,22 +33,24 @@ export default function UserList() {
  }
   
   return (
-    <div className="App">         
+    <div className="App">  
+    <div id='navbar'>      
      <h1>Meet The Team</h1>
      <div className='search-bar'>
-        <button className='click-button'> <BiSortAZ className='icons'/></button>
-        <form action="/action_page.php">          
-          <BsSearch /><input type="text" placeholder="  Search" name="search" className='search-box'/>
+        <button className='click-button'> <BiSortAZ className='icons' id="sort-icon"/></button>
+        <form action="/" id="form">          
+          <BsSearch /><input type="text" placeholder="" name="search" className='search-box'/>
         </form>
-        <button className='click-button' onClick={handleClick}> {viewicon}</button>
+        <button className='click-button' onClick={handleClick}> {viewicon} </button>
      </div>
+     </div> 
 
          {/*         {userList.map((email, key)=>{
           return <>
             <p key={key}>{email.email}</p>
           </>
         })} */}
-
+        
         {view}
 
     </div>
