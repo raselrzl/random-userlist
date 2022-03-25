@@ -34,7 +34,7 @@ export default function UserList() {
   
   return (
     <div className="App">  
-    <div id='navbar'>      
+        
      <h1>Meet The Team</h1>
      <div className='search-bar'>
         <button className='click-button'> <BiSortAZ className='icons' id="sort-icon"/></button>
@@ -43,7 +43,7 @@ export default function UserList() {
         </form>
         <button className='click-button' onClick={handleClick}> {viewicon} </button>
      </div>
-     </div> 
+    
 
          {/*         {userList.map((email, key)=>{
           return <>
