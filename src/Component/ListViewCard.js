@@ -4,7 +4,7 @@ import {MdOutlineWifiCalling3} from 'react-icons/md'
 
 export default function ListViewCard() {
   return (
-    <div id='List-View-Card'>
+    <div id='List-View-Card' className='fade-in'>
          <div className='user-image-container-list-view'> 
             <img className='user-image-list-view' src='https://randomuser.me/api/portraits/women/61.jpg' alt='User Pic' /> 
         </div>  
