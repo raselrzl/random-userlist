@@ -1,8 +1,6 @@
 import React from 'react'
 import { AiOutlineMail } from "react-icons/ai";
 import {MdOutlineWifiCalling3} from 'react-icons/md'
-import  '../Data/Userdata';
-
 
 export default function ListViewCard({city, name,picture}) {
   return (

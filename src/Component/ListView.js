@@ -17,9 +17,9 @@ export default function ListView({userList}) {
       />
       })
 
-  return (
-    <div className='card-items-list-view '>
-        {listviewcard}
-    </div>
-  )
-}
+        return (
+          <div className='card-items-list-view '>
+              {listviewcard}
+          </div>
+        )
+      }

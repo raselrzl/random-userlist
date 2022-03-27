@@ -12,9 +12,11 @@ export default function GridViewCard({city, name, picture}) {
         <div className='user-image-div'> 
             <img className='user-image' src={picture} alt='User Pic' /> 
         </div>
+
         <div className='address'>
           <h5>{city}</h5>
         </div>
+        
         <div className='e-p-icons'>
             <div><a href='page'> <AiOutlineMail className='icons'/></a></div>
             <div><a href='page'> <MdOutlineWifiCalling3 className='icons'/> </a></div>
