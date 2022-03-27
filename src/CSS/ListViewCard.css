@@ -31,9 +31,9 @@
 }
 
 #name-address{
-    margin-right: 250px;
+    margin-right:180px;
     padding: 15px;
-
+    text-align: center;
 }
 #name-address h6{
     margin-top: 0px;
@@ -49,16 +49,25 @@
         width: 340px;
     }
     #name-address{
-        margin-right: 65px;
+        margin-right: 0px;
+        text-align: center;
+        margin-left: 120px;
     }
+   
     #icons-container-list-view{
-        margin-right: 5px;
+        margin-right: 2px;
         align-self: flex-end;
     }
     .user-image-container-list-view{
         height: 70px;
         width: 70px; 
         border-radius: 50%; 
-        margin-left: 40px;    
+        margin-left: 45px; 
+        position: absolute;
+    }
+    .icons{
+        color: black;
+        margin-left: 4px;
+        font-size: 20px;
     }
   }
