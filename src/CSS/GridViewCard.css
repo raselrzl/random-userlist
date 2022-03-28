@@ -4,7 +4,7 @@
     align-items: center;
     height: 300px;
     width: 190px;
-    background: url(../Images/card.svg);
+    background: url(../Images/DesktopGridViewImages/card.svg);
     background-size: cover;
     border-radius: 20px;
     margin: 15px;
@@ -29,15 +29,140 @@
 	justify-content: center;
 }
 
+/* random backgroung */
 
+#cardBg1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img1.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+    
+}
+#cardBg2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img2.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+#cardBg3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img3.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+#cardBg4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img4.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+#cardBg5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img5.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
+#cardBg6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 190px;
+    background: url(../Images/DesktopGridViewImages/dgv-img6.svg);
+    background-size: cover;
+    border-radius: 20px;
+    margin: 15px;
+}
 
 @media screen and (max-width: 480px) {
     .card {
         height: 300px;
         width: 150px;
+        background: url(../Images/MobileGridViewImages/mgv-img1.svg);
         background-size: cover;
         border-radius: 20px;
         background-position: center;
-        background: url(../Images/m1.svg);
+        background-repeat: no-repeat;
+        
+    }
+    #cardBg1{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mgv-img1.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cardBg2{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mgv-img2.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cardBg3{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mgv-img3.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cardBg4{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mvg-img4.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cardBg5{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mvg-img5.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #cardBg6{
+        height: 300px;
+        width: 150px;
+        background: url(../Images/MobileGridViewImages/mvg-img6.svg);
+        background-size: cover;
+        border-radius: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
   }
+

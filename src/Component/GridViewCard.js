@@ -6,8 +6,12 @@ import {MdOutlineWifiCalling3} from 'react-icons/md'
 
 
 export default function GridViewCard({city, name, picture}) {
+
+  let bgArr=['cardBg1', 'cardBg2', 'cardBg3', 'cardBg4', 'cardBg5','cardBg6']
+  let randomBg=Math.floor(Math.random()*bgArr.length);
+  const cardBg=(bgArr[randomBg]);
   return (
-    <div className='card'>
+    <div id={cardBg} className='card'>
             <h3 className='user-name'>{name}</h3>  
         <div className='user-image-div'> 
             <img className='user-image' src={picture} alt='User Pic' /> 
