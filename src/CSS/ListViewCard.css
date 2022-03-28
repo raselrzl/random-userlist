@@ -1,14 +1,14 @@
-#List-View-Card{
+.ListViewCardBg{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;   
     height: 120px;
     width: 650px;
-    background-image: url(../Images/card-List-3.svg);
     background-size: cover;
     border-radius: 20px;
     margin: 15px;
+    background-image: url(../Images/card-List-3.svg);
 }
 #inner-div{
     position: absolute;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    #List-View-Card {
+    .ListViewCardBg {
         height: 100px;
         width: 340px;
     }
@@ -71,3 +71,23 @@
         font-size: 20px;
     }
   }
+
+ /*  random background  start*/
+    #ListViewCard1Bg{
+        background-image: url(../Images/ListViewImages/img1LV.svg);
+    }
+    #ListViewCard2Bg{
+        background-image: url(../Images/ListViewImages/img2LV.svg);
+    }
+    #ListViewCard3Bg{
+        background-image: url(../Images/ListViewImages/img3LV.svg);
+    }
+    #ListViewCard4Bg{
+        background-image: url(../Images/ListViewImages/img4LV.svg);
+    }
+    #ListViewCard5Bg{
+        background-image: url(../Images/ListViewImages/img5LV.svg);
+    }
+    #ListViewCard6Bg{
+        background-image: url(../Images/ListViewImages/img6LV.svg);
+    }

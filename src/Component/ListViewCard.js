@@ -3,8 +3,13 @@ import { AiOutlineMail } from "react-icons/ai";
 import {MdOutlineWifiCalling3} from 'react-icons/md'
 
 export default function ListViewCard({city, name,picture}) {
+  
+  let bgArr=['ListViewCard1Bg', 'ListViewCard2Bg', 'ListViewCard3Bg', 'ListViewCard4Bg', 'ListViewCard5Bg','ListViewCard6Bg']
+  let randomBg=Math.floor(Math.random()*bgArr.length);
+  const ListViewCard=(bgArr[randomBg]);
+  
   return (
-    <div id='List-View-Card' className='fade-in'>
+    <div id={ListViewCard} className='fade-in ListViewCardBg'>
          <div className='user-image-container-list-view'> 
             <img className='user-image-list-view' src={picture} alt='User Pic' /> 
         </div>  

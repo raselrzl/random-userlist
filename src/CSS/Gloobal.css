@@ -5,8 +5,10 @@
 }
 .icons:hover{
     color: gray;
+   
 }
 .click-button{
     background: none;
     border: none;
+    cursor: pointer;
 }
