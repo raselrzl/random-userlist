@@ -8,6 +8,7 @@ export default function ListViewCard({city, name,picture}) {
   let randomBg=Math.floor(Math.random()*bgArr.length);
   const ListViewCard=(bgArr[randomBg]);
   
+  
   return (
     <div id={ListViewCard} className='fade-in ListViewCardBg'>
          <div className='user-image-container-list-view'> 
