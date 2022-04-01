@@ -12,3 +12,14 @@
     border: none;
     cursor: pointer;
 }
+.search-box{
+    border: none;
+    border-bottom: 2px solid black;
+    height: 20px;
+    background-color: #D1C1C1;
+  }
+
+.search-box::focus{
+    border: none;
+    background-color: blue;
+}
