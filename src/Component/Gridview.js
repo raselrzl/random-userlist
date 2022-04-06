@@ -8,10 +8,12 @@ export default function Gridview({userList}) {
   const gridviewcard= val.filter((name)=>{
       if(input===''){
         return name
-      }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
-        return name
+      }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){        
+        return name        
       }
-     }
+      console.log(name)
+      return name
+   }
   ) 
   
   .map((userinfo)=>{

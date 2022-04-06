@@ -5,14 +5,14 @@ import {BsSearch} from 'react-icons/bs'
 export default function ListView({userList}) {
   const [input, setInput]=useState('')  
   const val=userList
-  console.log(val)
-  
+
   const listviewcard= val.filter((name)=>{
     if(input===''){
       return name
     }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
       return name
     }
+    return name
   }) 
   
   .map((userinfo)=>{    
