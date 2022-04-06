@@ -5,15 +5,14 @@ import {BsSearch} from 'react-icons/bs'
 export default function Gridview({userList}) {
   const [input, setInput]=useState('')
   const val=userList
-  console.log(val)
-
   const gridviewcard= val.filter((name)=>{
-    if(input===''){
-      return name
-    }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
-      return name
-    }
-  }) 
+      if(input===''){
+        return name
+      }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
+        return name
+      }
+     }
+  ) 
   
   .map((userinfo)=>{
     return    (<div key={userinfo.email} className='card-item fade-in'>
@@ -22,6 +21,7 @@ export default function Gridview({userList}) {
                         city={userinfo.location.city} 
                         name={userinfo.name.first}
                         picture={userinfo.picture.medium}
+                        cell={userinfo.cell}
                   />        
                 </div>)
               })

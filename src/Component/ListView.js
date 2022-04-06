@@ -24,6 +24,7 @@ export default function ListView({userList}) {
                       name={userinfo.name.first}
                       key={userinfo.email}
                       picture={userinfo.picture.medium}
+                      cell={userinfo.cell}
                       className='card-item-list-view'
               />
             })
