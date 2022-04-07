@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
-import GridViewCard from './GridViewCard'
+import React, { Suspense, useState } from 'react'
+
 import {BsSearch} from 'react-icons/bs'
+import Loading from './Loading';
+
+const GridViewCard = React.lazy(() => import('./GridViewCard'));
 
 export default function Gridview({userList}) {
   const [input, setInput]=useState('')
   const val=userList
   const gridviewcard= val.filter((name)=>{
       if(input===''){
-        return name
+        return true
       }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){        
-        return name        
-      }
-      console.log(name)
-      return name
-   }
+        return true        
+      }  
+      return false    
+   } 
+   
   ) 
   
   .map((userinfo)=>{
@@ -36,10 +39,15 @@ export default function Gridview({userList}) {
                                         onChange={(e) => {setInput(e.target.value)}}
                                   />                        
                       </div>
-                      <div className='card-items'>
-                          
-                          {gridviewcard}
-                      </div>
+
+                      <Suspense fallback={<Loading />}>
+                          <div className='card-items'>                          
+                              {gridviewcard}
+                          </div>
+                      </Suspense>
+
+
+                      
                 </div>
                    
                   )

@@ -13,6 +13,7 @@ export default function ListViewCard({city, name, picture, email, cell}) {
          <div className='user-image-container-list-view'> 
             <img className='user-image-list-view' src={picture} alt='User Pic' /> 
         </div>  
+        {console.log('code from List view card')}
             <div id='name-address'>
                 <h4>{name}</h4>
                 <h6>{city}</h6>

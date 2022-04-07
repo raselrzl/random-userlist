@@ -17,6 +17,7 @@ export default function GridViewCard({city, name, picture, email, cell}) {
         <div className='user-image-div'> 
             <img className='user-image' src={picture} alt='User Pic' /> 
         </div>
+        {console.log('code from grid view card//lezy load')}
 
         <div className='address'>
           <h5>{city}</h5>
