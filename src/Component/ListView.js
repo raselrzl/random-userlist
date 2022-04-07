@@ -41,8 +41,10 @@ export default function ListView({userList}) {
                            />
                 
               </div>
-                      <Suspense fallback={<Loading />}>                                                   
-                              {listviewcard}                          
+              <Suspense fallback={<Loading />}>
+                                                   
+                              {listviewcard}
+                          
                       </Suspense>
           </div>
           
