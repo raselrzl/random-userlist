@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
-import ListViewCard from './ListViewCard'
+import React, { lazy, Suspense, useState } from 'react'
 import {BsSearch} from 'react-icons/bs'
+import Loading from './Loading';
+
+
+const ListViewCard = lazy(() => import('./ListViewCard'));
 
 export default function ListView({userList}) {
   const [input, setInput]=useState('')  
@@ -38,7 +41,9 @@ export default function ListView({userList}) {
                            />
                 
               </div>
-              {listviewcard}
+                      <Suspense fallback={<Loading />}>                                                   
+                              {listviewcard}                          
+                      </Suspense>
           </div>
           
           

@@ -9,7 +9,7 @@ import Loading from '../Component/Loading'
 
 
 export default function UserList() {
-        const [listview, setListview]=useState(true)
+        const [viewcard, setViewcard]=useState(false)
         const [user, setUser]=useState(null)
         const [userSort, setUserSort]=useState(true)
         const url='https://randomuser.me/api/?results=50'
@@ -25,14 +25,14 @@ export default function UserList() {
         
         const userlist={...user}; 
                 
-        const view=(listview?<ListView userList={userlist.results} />: <Gridview userList={userlist.results}/>)
-        const viewicon=(listview?<BsGrid3X3GapFill className='icons' id="list-icon"/>:<FaThList className='icons' id="list-icon"/>)
+        const view=(viewcard?<ListView userList={userlist.results} />: <Gridview userList={userlist.results}/>)
+        const viewicon=(viewcard?<BsGrid3X3GapFill className='icons' id="list-icon"/>:<FaThList className='icons' id="list-icon"/>)
         const viewSortingicon=(userSort?<BiSortZA className='icons'/>:<BiSortAZ className='icons'/>)    
       
 
 
         const handleClick=()=>{
-                setListview(!listview)
+                setViewcard(!viewcard)
         }
         const handleSort=()=>{
           if(userSort){

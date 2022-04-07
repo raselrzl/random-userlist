@@ -2,8 +2,7 @@ import React from 'react'
 import { AiOutlineMail } from "react-icons/ai";
 import {MdOutlineWifiCalling3} from 'react-icons/md'
 
-export default function ListViewCard({city, name, picture, email, cell}) {
-  
+export default function ListViewCard({city, name, picture, email, cell}) {  
   let bgArr=['ListViewCard1Bg', 'ListViewCard2Bg', 'ListViewCard3Bg', 'ListViewCard4Bg', 'ListViewCard5Bg','ListViewCard6Bg']
   let randomBg=Math.floor(Math.random()*bgArr.length);
   const ListViewCard=(bgArr[randomBg]);
@@ -13,7 +12,7 @@ export default function ListViewCard({city, name, picture, email, cell}) {
          <div className='user-image-container-list-view'> 
             <img className='user-image-list-view' src={picture} alt='User Pic' /> 
         </div>  
-        {console.log('code from List view card')}
+        {console.log('From List View//Lezy Load')}
             <div id='name-address'>
                 <h4>{name}</h4>
                 <h6>{city}</h6>

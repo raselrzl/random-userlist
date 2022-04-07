@@ -1,9 +1,7 @@
-import React, { Suspense, useState } from 'react'
-
+import React, { useState } from 'react'
+import GridViewCard from './GridViewCard'
 import {BsSearch} from 'react-icons/bs'
-import Loading from './Loading';
 
-const GridViewCard = React.lazy(() => import('./GridViewCard'));
 
 export default function Gridview({userList}) {
   const [input, setInput]=useState('')
@@ -40,11 +38,11 @@ export default function Gridview({userList}) {
                                   />                        
                       </div>
 
-                      <Suspense fallback={<Loading />}>
-                          <div className='card-items'>                          
+                      
+                          <div className='card-items'>                     
                               {gridviewcard}
                           </div>
-                      </Suspense>
+                      
 
 
                       
