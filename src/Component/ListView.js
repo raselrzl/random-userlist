@@ -11,12 +11,11 @@ export default function ListView({userList}) {
 
   const listviewcard= val.filter((name)=>{
     if(input===''){
-      return true
+      return name
     }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
-      return true
-    }
-    return false
-    
+      return name
+    }   
+    return false    
   }) 
   
   .map((userinfo)=>{    
@@ -32,6 +31,8 @@ export default function ListView({userList}) {
                       className='card-item-list-view'
               />
             })
+
+         
         return (
                       
             <div className='card-items-list-view '>
