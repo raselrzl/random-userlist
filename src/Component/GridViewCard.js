@@ -17,9 +17,7 @@ export default function GridViewCard({city, name, picture, email, cell}) {
         <div className='user-image-div'> 
             <img className='user-image' src={picture} alt='User Pic' /> 
         </div>
-        {console.log('From Grid View')}
-
-        <div className='address'>
+         <div className='address'>
           <h5>{city}</h5>
         </div>
         

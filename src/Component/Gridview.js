@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
 import GridViewCard from './GridViewCard'
 import {BsSearch} from 'react-icons/bs'
+import Nouser from './Nouser'
 
 
 export default function Gridview({userList}) {
   const [input, setInput]=useState('')
   const val=userList
-  const gridviewcard= val.filter((name)=>{
-      if(input===''){
-        return true
-      }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){        
-        return true        
-      }  
-      return false    
-   } 
-   
-  ) 
-  
-  .map((userinfo)=>{
+
+
+  const filtered=val.filter((username)=>{
+    if(input===''){
+      return username
+    }else if(username.name.first.toLowerCase().includes(input.toLocaleLowerCase())){        
+      return username        
+    }  
+    return false    
+ })
+
+  const gridviewcard=filtered.map((userinfo)=>{
     return    (<div key={userinfo.email} className='card-item fade-in'>
                   <GridViewCard 
                         email={userinfo.email} 
@@ -29,7 +30,7 @@ export default function Gridview({userList}) {
                 </div>)
               })
 
-
+              const viewcard=gridviewcard.length? gridviewcard : <Nouser />
               return (
                 <div id='grid-view'>
                       <div id="input-form">          
@@ -40,7 +41,7 @@ export default function Gridview({userList}) {
 
                       
                           <div className='card-items'>                     
-                              {gridviewcard}
+                              {viewcard}
                           </div>
                       
 

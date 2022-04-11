@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useState } from 'react'
 import {BsSearch} from 'react-icons/bs'
 import Loading from './Loading';
+import Nouser from './Nouser';
 
 
 const ListViewCard = lazy(() => import('./ListViewCard'));
@@ -9,16 +10,16 @@ export default function ListView({userList}) {
   const [input, setInput]=useState('')  
   const val=userList
 
-  const listviewcard= val.filter((name)=>{
-    if(input===''){
-      return name
-    }else if(name.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
-      return name
-    }   
-    return false    
-  }) 
-  
-  .map((userinfo)=>{    
+  const filtered= val.filter((username)=>{
+              if(input===''){
+                return username
+              }else if(username.name.first.toLowerCase().includes(input.toLocaleLowerCase())){
+                return username
+              }   
+              return false    
+            }) 
+
+  const listviewcard=filtered.map((userinfo)=>{    
 
              return <ListViewCard 
                       email={userinfo.email} 
@@ -32,7 +33,7 @@ export default function ListView({userList}) {
               />
             })
 
-         
+          const viewcard=listviewcard.length? listviewcard : <Nouser />
         return (
                       
             <div className='card-items-list-view '>
@@ -42,10 +43,8 @@ export default function ListView({userList}) {
                            />
                 
               </div>
-              <Suspense fallback={<Loading />}>
-                                                   
-                              {listviewcard}
-                          
+              <Suspense fallback={<Loading />}>                                                   
+                              {viewcard}                     
                       </Suspense>
           </div>
           
