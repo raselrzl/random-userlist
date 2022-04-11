@@ -24,6 +24,8 @@
     background-color: blue;
 }
 
+
+
 /* This css is resposible for fade-in the GridView and ListView components */
 .fade-in {
     animation: fadeIn ease 1s;

@@ -30,7 +30,7 @@ export default function Gridview({userList}) {
                 </div>)
               })
 
-              const viewcard=gridviewcard.length? gridviewcard : <Nouser />
+              const viewcard=gridviewcard.length? gridviewcard : <Nouser inputValue={input}/>
               return (
                 <div id='grid-view'>
                       <div id="input-form">          

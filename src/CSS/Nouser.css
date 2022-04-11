@@ -4,3 +4,9 @@
     font-weight: 700;
     display: flex;
 }
+
+@media screen and (max-width: 480px) {
+    .no-user {
+      padding: 0px 40px;
+    }
+}

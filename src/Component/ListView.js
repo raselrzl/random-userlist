@@ -33,7 +33,7 @@ export default function ListView({userList}) {
               />
             })
 
-          const viewcard=listviewcard.length? listviewcard : <Nouser />
+          const viewcard=listviewcard.length? listviewcard : <Nouser inputValue={input}/>
         return (
                       
             <div className='card-items-list-view '>
