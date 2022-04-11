@@ -1,82 +1,61 @@
 .icons{
-    color: black;
-    margin: 7px;
-    font-size: 25px;
-}
+      color: black;
+      margin: 7px;
+      font-size: 25px;
+  }
 .icons:hover{
-    color: gray;
-   
-}
-.click-button{
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.search-box{
-    border: none;
-    border-bottom: 2px solid black;
-    height: 20px;
-    background-color: #D1C1C1;
+      color: gray;   
   }
 
-.search-box::focus{
-    border: none;
-    background-color: blue;
-}
 
-
-
-/* This css is resposible for fade-in the GridView and ListView components */
 .fade-in {
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-  }
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;
+        -moz-animation: fadeIn ease 1s;
+        -o-animation: fadeIn ease 1s;
+        -ms-animation: fadeIn ease 1s;
+      }
   @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
   
   @-moz-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
   
   @-webkit-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
+            
   @-o-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
-  
+            0% {
+              opacity:0;
+            }
+            100% {
+              opacity:1;
+            }
+          }
+          
   @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-  }
-  
-  /* fade-in end */
+            0% {
+              opacity:0;
+            }
+            100% {
+              opacity:1;
+          }
+        }

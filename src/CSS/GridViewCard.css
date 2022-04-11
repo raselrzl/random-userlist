@@ -14,7 +14,7 @@
     color: white;
 }
 
-.user-image-div{
+.user-image-container{
     height: 100px;
     width: 100px; 
     border-radius: 50%;   
@@ -24,7 +24,7 @@
     height: 100%;
     border-radius: 50%;
 }
-.e-p-icons{
+.email-cell-icons{
     display: flex;
 	justify-content: center;
 }

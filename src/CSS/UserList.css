@@ -1,41 +1,67 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .search-bar{
-    width: 650px;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-.home-button{
-  text-decoration: none;
-  color: black;
-  margin-right: 500px;
-  font-size: 30px;
-  font-weight: 800;
-  margin-top: 25px;
-  margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+.search-bar{
+              width: 650px;
+              display: flex;
+              justify-content: space-between;
+              margin: 25px 0px;              
+            }
+.heading{
+        text-decoration: none;
+        color: black;
+        margin-right: 500px;
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 25px;
+      }
+#search-form{
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+          }
+.grid-And-list-view-button, .sort-button{
+                                          background: none;
+                                          border: none;
+                                          cursor: pointer;
+                                        }
+.search-box{
+            border: none;
+            border-bottom: 2.5px solid black;
+            height: 20px;
+            background-color: #D1C1C1;
+          }
+
+#search-icon{
+            margin: 0px 5px;
 }
+
+.search-box::focus{
+                    border: none;
+                  }
 
 
 @media screen and (max-width: 480px) {
-  .card-items {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .search-bar{
-    width: 240px;
- 
-  }
-  .home-button{
-    color: black;
-    margin-right: 0px;
-    margin-top:25px;
-    margin-bottom: 10px;
-  }
+                          .card-items {
+                                      display: grid;
+                                      grid-template-columns: auto auto;
+                                    }
+                          .search-bar{
+                                      width: 240px;                         
+                                      margin: 10px 60px 10px 0px;
+                                  
+                                    }
+                          .heading{
+                                  color: black;
+                                  margin:25px 0px 0px 10px;
+                                }
+                          #search-form{
+                                      margin-top: 25px;
+                                      padding-right: 10px;
+                                    }
 
-}
+                      }
 
 
