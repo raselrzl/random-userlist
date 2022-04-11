@@ -15,13 +15,15 @@ export default function UserList() {
         const url='https://randomuser.me/api/?results=50'
 
         useEffect(()=>{
-            axios.get(url)
+            axios.get('https://randomuser.me/api/?results=50')
                  .then(response=>{
                   setUser(response.data)                      
                 })
             },[ url])
 
         if (!user) return <Loading />
+
+        
         
         const userlist={...user}; 
                 
@@ -66,7 +68,7 @@ export default function UserList() {
   
         return (
           <div className="App">              
-          <h1>Meet The Team</h1>
+          <a href='/' className='home-button'>Meet The Team</a>
           <div className='search-bar'>
               <button className='click-button' onClick={()=>handleSort()}> {viewSortingicon}</button>              
               <button className='click-button' onClick={handleClick}> {viewicon} </button>
