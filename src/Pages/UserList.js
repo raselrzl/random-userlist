@@ -28,7 +28,7 @@ export default function UserList() {
         
         const userlist={...user};                 
         const view=(viewcard?<ListView userList={userlist.results} inputval={input}/>: <Gridview userList={userlist.results} inputval={input}/>)
-        const viewicon=(viewcard?<BsGrid3X3GapFill className='icons' id="list-icon"/>:<FaThList className='icons' id="list-icon"/>)
+        const viewicon=(viewcard?<BsGrid3X3GapFill className='icons'/>:<FaThList className='icons'/>)
         const viewSortingicon=(userSort?<BiSortZA className='icons'/>:<BiSortAZ className='icons'/>)    
       
 
