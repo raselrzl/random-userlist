@@ -78,9 +78,9 @@ export default function UserList() {
                     </button> 
 
                     <div id="search-form">          
-                          <BsSearch className='icons'id= 'search-icon'/>
+                          <BsSearch className='icons' id='search-icon'/>
                           <input 
-                                        type="search" 
+                                        type="text" 
                                         placeholder="" 
                                         name="search" 
                                         className='search-box' 
