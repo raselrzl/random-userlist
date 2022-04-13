@@ -17,7 +17,7 @@ export default function UserList() {
         const url='https://randomuser.me/api/?results=50'
 
         useEffect(()=>{
-            axios.get('https://randomuser.me/api/?results=50')
+            axios.get(url)
                  .then(response=>{
                   setUser(response.data)                      
                 })
